@@ -32,7 +32,7 @@ class Line:
             Station(station_data["station_id"].unique()[0], stations[0], self.color)
         ]
         prev_station = line[0]
-        for station in stations[1:4]:
+        for station in stations[1:]:
             station_data = station_df[station_df["station_name"] == station]
             new_station = Station(
                 station_data["station_id"].unique()[0],
